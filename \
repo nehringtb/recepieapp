@@ -33,14 +33,6 @@
 
 }
 
-.btn-secondary {
+.btn-secodnary{
 	background-color: #000 !important;
 } 
-footer {
-	height: 300px;
-	background-color: grey;
-	.column{
-		text-align: center;
-		width: 33.3%
-	}
-}
