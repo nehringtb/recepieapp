@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class RecipesTest < ActionDispatch::IntegrationTest
-	
+
 	def setup
 		@chef = Chef.create(chefname:"Thomas", email: "email@email.com")
 		@recipe = Recipe.create(name: "recipe1", description: "desc1", chef: @chef)
@@ -12,7 +12,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
 		get recipes_url
 		assert_response :success
 	end
-	
+
 	test 'should get recipes listing' do
 		get recipes_path
 		assert_template 'recipes/index'
@@ -33,6 +33,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
 	end
 
 	test 'reject invalid recipe submission' do
-		get new_recipe_path 
+		get new_recipe_path
+	
 	end
-end 
+end
