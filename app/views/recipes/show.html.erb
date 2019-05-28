@@ -16,11 +16,4 @@
 			<div class="pull-right"><%= time_ago_in_words(@recipe.created_at) %> ago</div>
 		</p>
 	</div>
-	<p>
-		 Created by:
-	</p>
-	<p>
-		<small>	<%= @recipe.chef.chefname %> </small>
-		<div class="pull-right">created: <%=time_ago_in_words(@recipe.created_at) %> ago</div>
-	</p>
 </div>
