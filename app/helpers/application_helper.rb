@@ -2,7 +2,7 @@ module ApplicationHelper
 	def gravitar_for(user, options = { size: 80})
 		gravitar_id = Digest::MD5::hexdigest(user.email.downcase)
 		size = options[:size]
-		gravitar_url = "https://secure.gravitar.com/avitar/#{gravitar_id}?s=#{size}"
+		gravitar_url = "https://secure.gravatar.com/avatar/#{gravitar_id}?s=#{size}"
 		image_tag(gravitar_url, alt: user.chefname, class: "img-circle")
 	end
 end
