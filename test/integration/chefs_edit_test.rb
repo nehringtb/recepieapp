@@ -28,4 +28,4 @@ class ChefsEditTest < ActionDispatch::IntegrationTest
     assert_match 'Thomasnehring1@outlook.com', @chef.email
   end
 
-end
+
