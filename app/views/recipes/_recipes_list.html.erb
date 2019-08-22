@@ -1,7 +1,9 @@
 <% obj.each do |recipe| %>
 	<div class = "row">
-		<div class='col-md-2'>
-			<section class = 'center'> </section>
+		<div class='offset-md-2 col-md-2'>
+			<a href=<%= chef_path(recipe.chef) %>>
+				<%= gravitar_for recipe.chef, size: 80 %>
+			</a>
 		</div>
 		<div class = 'col-md-8 well'>
 			<h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
